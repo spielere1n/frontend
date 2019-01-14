@@ -1,4 +1,7 @@
 import { Component, OnInit } from '@angular/core';
+import { Router } from '@angular/router';
+
+import { IssueService } from '../../issue.service';
 
 @Component({
   selector: 'app-edit',
@@ -7,7 +10,7 @@ import { Component, OnInit } from '@angular/core';
 })
 export class EditComponent implements OnInit {
 
-  constructor() { }
+  constructor(private issueService: IssueService, private router: Router) { }
 
   ngOnInit() {
   }
